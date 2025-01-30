@@ -1,0 +1,385 @@
+html{
+    box-sizing: border-box;
+    font-family: serif;
+}
+
+*, *:before, *:after{
+    box-sizing: inherit;
+    
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    
+}
+
+
+.container{
+    width: 100%;
+    height: 60%;
+    border: 2px solid #F93827;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.point{
+    width: 30px;
+    height: 30px;
+    background-color: #F93827;
+    border-radius: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+    z-index: 10;
+    
+}
+.number{
+    font-size: 30px;
+    color: #16C47F;
+    position: absolute;
+    font-family: serif;
+    font-weight: bold;
+}
+
+.hours12{
+
+    top: 3px;
+
+}
+.hours6{
+    font-size: 30px;
+    color: #16C47F;
+    position: absolute;
+    bottom: 3px;
+    font-family: serif;
+    font-weight: bold;
+}
+.hours3{
+
+    right: 3px;
+
+}
+.hours9{
+
+    left: 3px;
+
+}
+.hours1{
+
+    right: 90px;
+    top: 3px;
+
+}
+.hours2{
+
+    right: 3px;
+    top: 100px;
+
+}
+.hours4{
+
+    right: 3px;
+    bottom: 100px;
+
+}
+.hours5{
+
+    right: 90px;
+    bottom: 3px;
+
+
+}
+.hours7{
+
+    left: 90px;
+    bottom: 3px;
+
+}
+.hours8{
+
+    left: 3px;
+    bottom: 100px;
+}
+.hours10{
+
+    left: 3px;
+    top: 100px;
+
+}
+.hours11{
+
+    left: 90px;
+    top: 3px;
+
+}
+.blur{
+    border-radius: 30px;
+    background-color: rgba(255,255,255,0.1);
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: -1;
+    bottom: 0;
+    backdrop-filter: blur(20px);
+}
+.shape1{
+    border-radius: 30px;
+    background-color: #F9E400;
+    position: absolute;
+    width: 100px;
+    height:100px;
+    z-index: -2;
+    top: 0px;
+    right: 0px;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+    
+}
+.arrow{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    left: 0;
+    bottom: 0;
+    width: 3px;
+    margin: auto;
+}   
+.hours{
+    z-index: 3;
+    background:linear-gradient(#F93827 50%, transparent 40%)no-repeat ;
+    height:50%;
+}
+.minutes{
+    z-index: 2;
+    background:linear-gradient(#6301ff 50%, transparent 40%)no-repeat ;
+    height:70%;
+}
+.seconds{
+    z-index: 1;
+    background:linear-gradient(#16C47F 50%, transparent 40%)no-repeat ;
+    height:80%;
+}
+
+.hoursClock{
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    border: 1px solid #F93827;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 70px;
+    left: 70px;
+}
+.hoursClockPoint{
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background-color: #F93827;
+    position: absolute;
+   
+}
+
+.hoursClockArrow{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    left: 0;
+    bottom: 0;
+    width: 3px;
+    margin: auto;
+    background:linear-gradient(#F93827 50%, transparent 40%)no-repeat ;
+    height:60%;
+}
+.hoursClockHours12{
+    position: absolute;
+    width: 2px;
+    height: 8px;
+    background: #F93827;
+    top:0;
+}
+.hoursClockHours6{
+    position: absolute;
+    width: 2px;
+    height: 8px;
+    background: #F93827;
+    bottom:0;
+}
+.hoursClockHours3{
+    position: absolute;
+    width: 8px;
+    height: 2px;
+    background: #F93827;
+    right:0;
+}
+.hoursClockHours9{
+    position: absolute;
+    width: 8px;
+    height: 2px;
+    background: #F93827;
+    left:0;
+}
+
+
+
+.secondsClock{
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    border: 1px solid #16C47F;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 70px;
+    right: 70px;
+}
+.secondsClockPoint{
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background-color: #16C47F;
+    position: absolute;
+   
+}
+
+.secondsClockArrow{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    left: 0;
+    bottom: 0;
+    width: 3px;
+    margin: auto;
+    background:linear-gradient(#16C47F 50%, transparent 40%)no-repeat ;
+    height:60%;
+}
+.secondsClockHours12{
+    position: absolute;
+    width: 2px;
+    height: 8px;
+    background: #16C47F;
+    top:0;
+}
+.secondsClockHours6{
+    position: absolute;
+    width: 2px;
+    height: 8px;
+    background: #16C47F;
+    bottom:0;
+}
+.secondsClockHours3{
+    position: absolute;
+    width: 8px;
+    height:2px;
+    background: #16C47F;
+    right:0;
+}
+.secondsClockHours9{
+    position: absolute;
+    width: 8px;
+    height: 2px;
+    background: #16C47F;
+    left:0;
+}
+
+
+
+
+
+
+.minutesClock{
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    border: 1px solid #6301ff;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 80px;
+    right: 0px;
+    left: 0;
+    margin: 0 auto;
+}
+.minutesClockPoint{
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background: #6301ff;
+    position: absolute;
+   
+}
+
+.minutesClockArrow{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    left: 0;
+    bottom: 0;
+    width: 3px;
+    margin: auto;
+    background:linear-gradient(#6301ff 50%, transparent 40%)no-repeat ;
+    height:60%;
+}
+.minutesClockHours12{
+    position: absolute;
+    width: 2px;
+    height: 8px;
+    background: #6301ff;
+    top:0;
+}
+.minutesClockHours6{
+    position: absolute;
+    width: 2px;
+    height: 8px;
+    background: #6301ff;
+    bottom:0;
+}
+.minutesClockHours3{
+    position: absolute;
+    width: 8px;
+    height: 2px;
+    background: #6301ff;
+    right:0;
+}
+.minutesClockHours9{
+    position: absolute;
+    width: 8px;
+    height: 2px;
+    background: #6301ff;
+    left:0;
+}
+
+@media screen and (min-width: 500px) {
+    .container{
+        width: 390px;
+        height: 400px;
+       
+    }
+}
+
+
+
+@media screen and (min-width: 700px) {
+    .container{
+        width: 480px;
+        height: 460px;
+    }
+}
+
