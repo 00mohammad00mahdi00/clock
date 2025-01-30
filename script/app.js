@@ -7,6 +7,7 @@ const hoursClockArrow = document.querySelector(".hoursClockArrow")
 const secondsClockArrow = document.querySelector(".secondsClockArrow")
 const minutesClockArrow = document.querySelector(".minutesClockArrow")
 
+// function calculate clock and add transfor rotate 
 
 function clock(hours, minutes, seconds) {
     let hoursDate;
